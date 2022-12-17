@@ -15,18 +15,19 @@
 #include "TreetopTreeHouse.h"           // tablice 2D
 #include "RopeBridge.h"                 // pozycje w przestrzeni, symulacja fizyki
 #include "CathodeRayTube.h"             // mapa, przeszukiwanie mapy, renderowanie grafiki
+#include "MonkeyInTheMiddle.h"          // zarządzenie dużymi liczbami
 
 using namespace std;
 
 int main()
 {
-    ifstream file("input10.txt");
+    ifstream file("input11.txt");
     if (file.is_open())
     {
         std::stringstream buffer;
         buffer << file.rdbuf();
 
-        AdventDay* task = new CathodeRayTube();
+        AdventDay* task = new MonkeyInTheMiddle();
         task->solve(buffer.str());
         cout << task->output1 << endl << task->output2 << endl;
         delete task;
