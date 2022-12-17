@@ -13,18 +13,19 @@
 #include "TuningTrouble.h"              // kolejka
 #include "NoSpaceLeftOnDevice.h"        // drzewo, wskaźniki, zaawansowne podejmowanie decyzji
 #include "TreetopTreeHouse.h"           // tablice 2D
+#include "RopeBridge.h"
 
 using namespace std;
 
 int main()
 {
-    ifstream file("input8.txt");
+    ifstream file("input9.txt");
     if (file.is_open())
     {
         std::stringstream buffer;
         buffer << file.rdbuf();
 
-        AdventDay* task = new TreetopTreeHouse();
+        AdventDay* task = new RopeBridge();
         task->solve(buffer.str());
         cout << task->output1 << endl << task->output2 << endl;
         delete task;
