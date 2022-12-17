@@ -6,15 +6,20 @@
 
 using namespace std;
 
+RopeBridge::RopeBridge()
+{
+	rope = new Rope(10);
+}
+
 void RopeBridge::solve(const std::string& input)
 {
 	list<string> lines;
 	splitString(input, lines, enter);
 
-	int instructionsCount = 0;
-	int tailMoves = 0;
-	set<Vector2Int> visitedPositions;
-	visitedPositions.insert(tailPosition);
+	set<Vector2Int> visitedPositions1;
+	set<Vector2Int> visitedPositions2;
+	visitedPositions1.insert(rope->at(1));
+	visitedPositions2.insert(rope->tail());
 	for (auto line = lines.begin(); line != lines.end(); ++line)
 	{
 		vector<string> elements;
@@ -24,35 +29,30 @@ void RopeBridge::solve(const std::string& input)
 
 		for (int i = 0; i < count; i++)
 		{
-			Vector2Int prevHeadPosition = headPosition;
 			if (direction == "U")
 			{
-				headPosition.move(0, 1);
+				rope->moveByHeadUp();
 			}
 			else if (direction == "D")
 			{
-				headPosition.move(0, -1);
+				rope->moveByHeadDown();
 			}
 			else if (direction == "L")
 			{
-				headPosition.move(-1, 0);
+			 	rope->moveByHeadLeft();
 			}
 			else if (direction == "R")
 			{
-				headPosition.move(1, 0);
+			 	rope->moveByHeadRight();
 			}
-
-			if (touches(tailPosition, headPosition) == false)
-			{
-				tailPosition = prevHeadPosition;
-			}
-
-			visitedPositions.insert(tailPosition);
+			//cout << "Move " << direction << " : " << rope->tail() << endl;
+			visitedPositions1.insert(rope->at(1));
+			visitedPositions2.insert(rope->tail());
 		}
-		instructionsCount++;
 	}
 
-	output1 = visitedPositions.size();
+	output1 = visitedPositions1.size();
+	output2 = visitedPositions2.size();
 }
 
 bool RopeBridge::touches(const Vector2Int& first, const Vector2Int& second) const
@@ -63,7 +63,15 @@ bool RopeBridge::touches(const Vector2Int& first, const Vector2Int& second) cons
 		&& (verticalDistance <= 1) && (verticalDistance >= -1);
 }
 
+RopeBridge::~RopeBridge()
+{
+	delete rope;
+}
+
+
 ostream& operator<<(ostream& out, const Vector2Int& vector)
 {
 	return out << "(" << vector.x << ", " << vector.y << ")";
 }
+
+

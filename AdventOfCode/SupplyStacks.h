@@ -24,7 +24,6 @@ class SupplyStacks :
 public:
     void solve(const std::string& input) override;
 
-
 private:
     const int getStacksCount(const std::string& stackInfo) const;
     void applyMove(std::vector<std::stack<char>>& stacksVector, const CratesMove move);

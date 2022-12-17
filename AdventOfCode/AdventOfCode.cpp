@@ -7,13 +7,13 @@
 
 #include "CalorieCounting.h"            // pierwsze kolecje, maximum
 #include "RockPaperScissors.h"          // podejmowanie decyzji 
-#include "RucksackReorganization.h"     // duplikaty, części wspólne
+#include "RucksackReorganization.h"     // duplikaty i części wspólne w kolekcjach
 #include "CampCleanup.h"                // zakresy wspólne zbiorów liczb
 #include "SupplyStacks.h"               // stos
 #include "TuningTrouble.h"              // kolejka
 #include "NoSpaceLeftOnDevice.h"        // drzewo, wskaźniki, zaawansowne podejmowanie decyzji
 #include "TreetopTreeHouse.h"           // tablice 2D
-#include "RopeBridge.h"
+#include "RopeBridge.h"                 // pozycje w przestrzeni, symulacja fizyki
 
 using namespace std;
 

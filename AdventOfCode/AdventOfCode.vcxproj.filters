@@ -110,5 +110,8 @@
     <ClInclude Include="TuningTrouble.h">
       <Filter>Pliki nagłówkowe\Advent Days</Filter>
     </ClInclude>
+    <ClInclude Include="Rope.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
