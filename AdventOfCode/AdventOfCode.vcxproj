@@ -143,6 +143,7 @@
     <ClCompile Include="AdventOfCode.cpp" />
     <ClCompile Include="CalorieCounting.cpp" />
     <ClCompile Include="CampCleanup.cpp" />
+    <ClCompile Include="CathodeRayTube.cpp" />
     <ClCompile Include="Folder.cpp" />
     <ClCompile Include="DiskContent.cpp" />
     <ClCompile Include="File.cpp" />
@@ -159,11 +160,13 @@
     <ClInclude Include="AdventDay.h" />
     <ClInclude Include="CalorieCounting.h" />
     <ClInclude Include="CampCleanup.h" />
+    <ClInclude Include="CathodeRayTube.h" />
     <ClInclude Include="Folder.h" />
     <ClInclude Include="DiskContent.h" />
     <ClInclude Include="File.h" />
     <ClInclude Include="NoSpaceLeftOnDevice.h" />
     <ClInclude Include="RockPaperScissors.h" />
+    <ClInclude Include="Rope.h" />
     <ClInclude Include="RopeBridge.h" />
     <ClInclude Include="RucksackReorganization.h" />
     <ClInclude Include="SupplyStacks.h" />

@@ -66,6 +66,9 @@
     <ClCompile Include="Vector2Int.cpp">
       <Filter>Pliki źródłowe</Filter>
     </ClCompile>
+    <ClCompile Include="CathodeRayTube.cpp">
+      <Filter>Pliki źródłowe\Advent Days</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AdventDay.h">
@@ -108,6 +111,12 @@
       <Filter>Pliki nagłówkowe\Advent Days</Filter>
     </ClInclude>
     <ClInclude Include="TuningTrouble.h">
+      <Filter>Pliki nagłówkowe\Advent Days</Filter>
+    </ClInclude>
+    <ClInclude Include="Rope.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="CathodeRayTube.h">
       <Filter>Pliki nagłówkowe\Advent Days</Filter>
     </ClInclude>
   </ItemGroup>

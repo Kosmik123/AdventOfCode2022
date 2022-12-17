@@ -15,7 +15,7 @@ public:
 
 protected:
 	std::string enter = "\n";
-	static void splitString(const std::string& text, std::list<std::string>& output, const std::string& delimiter);
-	static void splitString(const std::string& text, std::vector<std::string>& output, const std::string& delimiter);
+	static void splitString(const std::string& text, std::list<std::string>& output, const std::string& delimiter = "\n");
+	static void splitString(const std::string& text, std::vector<std::string>& output, const std::string& delimiter = "\n");
 };
 
