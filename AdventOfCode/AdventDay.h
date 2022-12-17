@@ -3,12 +3,13 @@
 #include <string>
 #include <list>
 #include <vector>
+#include "Vector2Int.h"
 
 class AdventDay
 {
 public:
-	int output1;
-	int output2;
+	int output1 = 0;
+	int output2 = 0;
 
 	virtual void solve(const std::string& input) = 0;
 

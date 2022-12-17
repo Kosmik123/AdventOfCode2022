@@ -13,33 +13,18 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Pliki źródłowe\Advent Days">
+      <UniqueIdentifier>{3bfa6bff-b536-4e94-b187-a06c95a1c9e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki nagłówkowe\Advent Days">
+      <UniqueIdentifier>{2ccb11cd-fbd5-48a5-9ccb-216e786fe2f3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AdventOfCode.cpp">
       <Filter>Pliki źródłowe</Filter>
     </ClCompile>
-    <ClCompile Include="CalorieCounting.cpp">
-      <Filter>Pliki źródłowe</Filter>
-    </ClCompile>
     <ClCompile Include="AdventDay.cpp">
-      <Filter>Pliki źródłowe</Filter>
-    </ClCompile>
-    <ClCompile Include="RockPaperScissors.cpp">
-      <Filter>Pliki źródłowe</Filter>
-    </ClCompile>
-    <ClCompile Include="RucksackReorganization.cpp">
-      <Filter>Pliki źródłowe</Filter>
-    </ClCompile>
-    <ClCompile Include="CampCleanup.cpp">
-      <Filter>Pliki źródłowe</Filter>
-    </ClCompile>
-    <ClCompile Include="SupplyStacks.cpp">
-      <Filter>Pliki źródłowe</Filter>
-    </ClCompile>
-    <ClCompile Include="TuningTrouble.cpp">
-      <Filter>Pliki źródłowe</Filter>
-    </ClCompile>
-    <ClCompile Include="NoSpaceLeftOnDevice.cpp">
       <Filter>Pliki źródłowe</Filter>
     </ClCompile>
     <ClCompile Include="DiskContent.cpp">
@@ -51,33 +36,39 @@
     <ClCompile Include="Folder.cpp">
       <Filter>Pliki źródłowe</Filter>
     </ClCompile>
+    <ClCompile Include="CalorieCounting.cpp">
+      <Filter>Pliki źródłowe\Advent Days</Filter>
+    </ClCompile>
+    <ClCompile Include="CampCleanup.cpp">
+      <Filter>Pliki źródłowe\Advent Days</Filter>
+    </ClCompile>
+    <ClCompile Include="NoSpaceLeftOnDevice.cpp">
+      <Filter>Pliki źródłowe\Advent Days</Filter>
+    </ClCompile>
+    <ClCompile Include="RockPaperScissors.cpp">
+      <Filter>Pliki źródłowe\Advent Days</Filter>
+    </ClCompile>
+    <ClCompile Include="RopeBridge.cpp">
+      <Filter>Pliki źródłowe\Advent Days</Filter>
+    </ClCompile>
+    <ClCompile Include="RucksackReorganization.cpp">
+      <Filter>Pliki źródłowe\Advent Days</Filter>
+    </ClCompile>
     <ClCompile Include="TreetopTreeHouse.cpp">
+      <Filter>Pliki źródłowe\Advent Days</Filter>
+    </ClCompile>
+    <ClCompile Include="TuningTrouble.cpp">
+      <Filter>Pliki źródłowe\Advent Days</Filter>
+    </ClCompile>
+    <ClCompile Include="SupplyStacks.cpp">
+      <Filter>Pliki źródłowe\Advent Days</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector2Int.cpp">
       <Filter>Pliki źródłowe</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="CalorieCounting.h">
-      <Filter>Pliki nagłówkowe</Filter>
-    </ClInclude>
     <ClInclude Include="AdventDay.h">
-      <Filter>Pliki nagłówkowe</Filter>
-    </ClInclude>
-    <ClInclude Include="RockPaperScissors.h">
-      <Filter>Pliki nagłówkowe</Filter>
-    </ClInclude>
-    <ClInclude Include="RucksackReorganization.h">
-      <Filter>Pliki nagłówkowe</Filter>
-    </ClInclude>
-    <ClInclude Include="CampCleanup.h">
-      <Filter>Pliki nagłówkowe</Filter>
-    </ClInclude>
-    <ClInclude Include="SupplyStacks.h">
-      <Filter>Pliki nagłówkowe</Filter>
-    </ClInclude>
-    <ClInclude Include="TuningTrouble.h">
-      <Filter>Pliki nagłówkowe</Filter>
-    </ClInclude>
-    <ClInclude Include="NoSpaceLeftOnDevice.h">
       <Filter>Pliki nagłówkowe</Filter>
     </ClInclude>
     <ClInclude Include="DiskContent.h">
@@ -89,8 +80,35 @@
     <ClInclude Include="Folder.h">
       <Filter>Pliki nagłówkowe</Filter>
     </ClInclude>
-    <ClInclude Include="TreetopTreeHouse.h">
+    <ClInclude Include="Vector2Int.h">
       <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="CalorieCounting.h">
+      <Filter>Pliki nagłówkowe\Advent Days</Filter>
+    </ClInclude>
+    <ClInclude Include="CampCleanup.h">
+      <Filter>Pliki nagłówkowe\Advent Days</Filter>
+    </ClInclude>
+    <ClInclude Include="NoSpaceLeftOnDevice.h">
+      <Filter>Pliki nagłówkowe\Advent Days</Filter>
+    </ClInclude>
+    <ClInclude Include="RockPaperScissors.h">
+      <Filter>Pliki nagłówkowe\Advent Days</Filter>
+    </ClInclude>
+    <ClInclude Include="RopeBridge.h">
+      <Filter>Pliki nagłówkowe\Advent Days</Filter>
+    </ClInclude>
+    <ClInclude Include="RucksackReorganization.h">
+      <Filter>Pliki nagłówkowe\Advent Days</Filter>
+    </ClInclude>
+    <ClInclude Include="SupplyStacks.h">
+      <Filter>Pliki nagłówkowe\Advent Days</Filter>
+    </ClInclude>
+    <ClInclude Include="TreetopTreeHouse.h">
+      <Filter>Pliki nagłówkowe\Advent Days</Filter>
+    </ClInclude>
+    <ClInclude Include="TuningTrouble.h">
+      <Filter>Pliki nagłówkowe\Advent Days</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -21,7 +21,7 @@ void SupplyStacks::solve(const std::string& input)
 
 	// CREATE STACKS
 	vector<stack<char>> stacks;
-	for (size_t i = 0; i < stacksCount; i++)
+	for (int i = 0; i < stacksCount; i++)
 	{
 		stack<char> newStack;
 		stacks.push_back(newStack);
