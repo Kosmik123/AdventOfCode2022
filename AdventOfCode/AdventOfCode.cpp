@@ -14,6 +14,7 @@
 #include "NoSpaceLeftOnDevice.h"        // drzewo, wskaźniki, zaawansowne podejmowanie decyzji
 #include "TreetopTreeHouse.h"           // tablice 2D
 #include "RopeBridge.h"                 // pozycje w przestrzeni, symulacja fizyki
+#include "CathodeRayTube.h"             // mapa, przeszukiwanie mapy, renderowanie grafiki
 
 using namespace std;
 
