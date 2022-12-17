@@ -69,6 +69,12 @@
     <ClCompile Include="CathodeRayTube.cpp">
       <Filter>Pliki źródłowe\Advent Days</Filter>
     </ClCompile>
+    <ClCompile Include="MonkeyInTheMiddle.cpp">
+      <Filter>Pliki źródłowe\Advent Days</Filter>
+    </ClCompile>
+    <ClCompile Include="Monkey.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AdventDay.h">
@@ -118,6 +124,12 @@
     </ClInclude>
     <ClInclude Include="CathodeRayTube.h">
       <Filter>Pliki nagłówkowe\Advent Days</Filter>
+    </ClInclude>
+    <ClInclude Include="MonkeyInTheMiddle.h">
+      <Filter>Pliki nagłówkowe\Advent Days</Filter>
+    </ClInclude>
+    <ClInclude Include="Monkey.h">
+      <Filter>Pliki nagłówkowe</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
