@@ -75,6 +75,9 @@
     <ClCompile Include="Monkey.cpp">
       <Filter>Pliki źródłowe</Filter>
     </ClCompile>
+    <ClCompile Include="HillClimbingAlgorithm.cpp">
+      <Filter>Pliki źródłowe\Advent Days</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AdventDay.h">
@@ -129,6 +132,9 @@
       <Filter>Pliki nagłówkowe\Advent Days</Filter>
     </ClInclude>
     <ClInclude Include="Monkey.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="HillClimbingAlgorithm.h">
       <Filter>Pliki nagłówkowe</Filter>
     </ClInclude>
   </ItemGroup>

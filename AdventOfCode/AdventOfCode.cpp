@@ -16,18 +16,19 @@
 #include "RopeBridge.h"                 // pozycje w przestrzeni, symulacja fizyki
 #include "CathodeRayTube.h"             // mapa, przeszukiwanie mapy, renderowanie grafiki
 #include "MonkeyInTheMiddle.h"          // rozwiązanie problemu matematycznie
+#include "HillClimbingAlgorithm.h"      // pathfinding
 
 using namespace std;
 
 int main()
 {
-    ifstream file("input11.txt");
+    ifstream file("input12.txt");
     if (file.is_open())
     {
         std::stringstream buffer;
         buffer << file.rdbuf();
 
-        AdventDay* task = new MonkeyInTheMiddle();
+        AdventDay* task = new HillClimbingAlgorithm();
         task->solve(buffer.str());
         cout << task->output1 << endl << task->output2 << endl;
         delete task;

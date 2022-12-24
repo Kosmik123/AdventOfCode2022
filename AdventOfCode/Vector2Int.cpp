@@ -22,3 +22,15 @@ void Vector2Int::move(int x, int y)
     this->x += x;
     this->y += y;
 }
+
+bool Vector2Int::operator==(const Vector2Int& other)
+{
+    return x == other.x && y == other.y;
+}
+
+std::ostream& operator<<(std::ostream& stream, const Vector2Int& vector)
+{
+    stream << "(" << vector.x << ", " << vector.y << ")";
+    return stream;
+}
+

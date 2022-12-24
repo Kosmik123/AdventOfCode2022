@@ -67,11 +67,3 @@ RopeBridge::~RopeBridge()
 {
 	delete rope;
 }
-
-
-ostream& operator<<(ostream& out, const Vector2Int& vector)
-{
-	return out << "(" << vector.x << ", " << vector.y << ")";
-}
-
-

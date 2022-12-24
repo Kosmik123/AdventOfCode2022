@@ -147,6 +147,7 @@
     <ClCompile Include="Folder.cpp" />
     <ClCompile Include="DiskContent.cpp" />
     <ClCompile Include="File.cpp" />
+    <ClCompile Include="HillClimbingAlgorithm.cpp" />
     <ClCompile Include="Monkey.cpp" />
     <ClCompile Include="MonkeyInTheMiddle.cpp" />
     <ClCompile Include="NoSpaceLeftOnDevice.cpp" />
@@ -166,6 +167,7 @@
     <ClInclude Include="Folder.h" />
     <ClInclude Include="DiskContent.h" />
     <ClInclude Include="File.h" />
+    <ClInclude Include="HillClimbingAlgorithm.h" />
     <ClInclude Include="Monkey.h" />
     <ClInclude Include="MonkeyInTheMiddle.h" />
     <ClInclude Include="NoSpaceLeftOnDevice.h" />

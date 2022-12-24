@@ -15,6 +15,3 @@ private:
     Rope* rope;
 
 };
-
-std::ostream& operator<<(std::ostream& out, const Vector2Int& vector);
-

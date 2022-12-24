@@ -21,12 +21,7 @@ void TreetopTreeHouse::solve(const std::string& input)
 			numbers[j][i] = character - '0';
 		}
 	}
-
 	output1 = countVisibleFromSides();
-
-
-
-	int scenic = calculateScenicScore(2, 3);
 
 	int maxScenicScore = 0;
 	for (int j = 1; j < height - 1; j++)
@@ -38,7 +33,6 @@ void TreetopTreeHouse::solve(const std::string& input)
 				maxScenicScore = scenicScore;
 		}
 	}
-
 	output2 = maxScenicScore;
 }
 
