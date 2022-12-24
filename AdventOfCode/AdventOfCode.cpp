@@ -15,7 +15,7 @@
 #include "TreetopTreeHouse.h"           // tablice 2D
 #include "RopeBridge.h"                 // pozycje w przestrzeni, symulacja fizyki
 #include "CathodeRayTube.h"             // mapa, przeszukiwanie mapy, renderowanie grafiki
-#include "MonkeyInTheMiddle.h"          // zarządzenie dużymi liczbami
+#include "MonkeyInTheMiddle.h"          // rozwiązanie problemu matematycznie
 
 using namespace std;
 

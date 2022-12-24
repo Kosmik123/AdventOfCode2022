@@ -4,6 +4,13 @@
 
 using namespace std;
 
+
+Monkey::Monkey()
+{
+
+}
+
+
 Monkey::Monkey(const string& inputData, bool doLog)
 {
 	log = doLog;
@@ -24,15 +31,15 @@ Monkey::Monkey(const string& inputData, bool doLog)
 	AdventDay::splitString(currentLineSplitted[1], arguments, " ");
 	if (arguments[4] == "old")
 	{
-		operationType = Exponentiation;
+		operationType = OperationType::Exponentiation;
 		operationValue = 2;
 	}
 	else
 	{
 		if (arguments[3] == "*")
-			operationType = Multiplication;
+			operationType = OperationType::Multiplication;
 		else
-			operationType = Addition;
+			operationType = OperationType::Addition;
 		operationValue = stoi(arguments[4]);
 	}
 	// test
@@ -51,6 +58,7 @@ Monkey::Monkey(const string& inputData, bool doLog)
 	falseTarget = stoi(arguments[3]);
 }
 
+
 void Monkey::inspectItem(int& targetIndex, int& worryLevel) const
 {
 	int item = items.front();
@@ -58,19 +66,19 @@ void Monkey::inspectItem(int& targetIndex, int& worryLevel) const
 		cout << "  Monkey inspects an item with a worry level of " << item << endl;
 	switch (operationType)
 	{
-	case Addition:
+	case OperationType::Addition:
 		item += operationValue;
 		if (log)
 			cout << "    Worry level increases by " << operationValue << " to " << item << endl;
 		break;
 	
-	case Multiplication:
+	case OperationType::Multiplication:
 		item *= operationValue;
 		if (log)
 			cout << "    Worry level is multiplied by " << operationValue << " to " << item << endl;
 		break;
 	
-	case Exponentiation:
+	case OperationType::Exponentiation:
 		item *= item;
 		if (log)
 			cout << "    Worry level is multiplied by itself to " << item << endl;
@@ -105,8 +113,13 @@ void Monkey::removeFirstItem()
 
 void Monkey::addItem(int worryValue)
 {
-
 	items.push(worryValue);
+}
+
+void Monkey::setOperation(OperationType type, int value)
+{
+	operationType = type;
+	operationValue = value;
 }
 
 bool Monkey::hasItems() const
